@@ -9,6 +9,9 @@ from PyInquirer import Validator, ValidationError
 
 from examples import custom_style_3
 
+import warnings
+warnings.filterwarnings("ignore")
+
 
 
 class commentValidator(Validator):

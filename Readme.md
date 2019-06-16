@@ -6,16 +6,19 @@ For example:
 - Review2:The place was not clean and the food oh so stale!(Predicted sentiment-Negative)
 
 
-## How to use the tool
+## How to use the tool?
 
 The Food review sentiment predictor has been rendered as a CLI tool using the excellent Pyinquirer package.
 
 Steps to use and test the tool:
-- Set up a different python environment on your desktop to ensure your existing python system is not impacted( https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
-- use dependencies.py to install all the required packages
+- Set up a different conda environment on your desktop to ensure your existing python system is not impacted
+ and use requirements.txt to install all the required packages:
+   conda create --name <env> --file requirements.txt 
+- Now you need to install Pyinquirer through pip which is what is used to render the CLI tool:
+   Pip install Pyinquirer
 - run CLI_Food_review.py(by typing the command python CLI_Food_review.py)
 
-## Snapshots of how the tool works
+## How the tool works?
 
 Click on the below link to get a quick demo on how the tool works.
 
@@ -67,7 +70,15 @@ Based on all of these factors we decided to proceed with using a traditional cla
 
 ## Further details on development of Machine learning model
 
-Please refer to the jupyter notebook in the repo EDA_base_model.ipynb to get more details on how the model was developed.Summary is we developed the model on the training data using a cross validation across 5 folds which gave us an accuracy of 82.07% ,that is our ML model will be able to differentiate between a positive and negative sentiment around 82% of the time.Although this is not in high 90s(which is how the state of teh art is ) considering we have limited us to only 959 data points we will take that to complete the pipeline of our tool
+Please refer to the jupyter notebook in the repo EDA_base_model.ipynb to get more details on how the model was developed.Summary is we developed the model on the training data using a cross validation across 5 folds which gave us an accuracy of 82.07% ,that is our ML model will be able to differentiate between a positive and negative sentiment around 82% of the time.Although this is not in high 90s(which is how the state of the art is ) considering we have limited us to only 959 data points we will take that to complete the pipeline of our tool
+
+## Future enhancements opportunities
+
+The accuracy of sentiment prediction could be improved to ~98% as per the SOTA results observed in the academic papers.Below are the few steps that need to be tried to reach there:
+1. Increase the data by identifying open source food based reviews
+2. Try transfer learning by using something like ULMFIT
+3. Use Embedding based tokenizations of text comments
+4. Once we have more data deep learning is the only way ahead
 
 
 
