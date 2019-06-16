@@ -1,6 +1,6 @@
 #  Food review application
 
-This is a mini food review application which based on the text review entered by the user predcits if the review is positive or negative(A classic sentiment analysis problem)
+This is a mini food review application which, based on the text review entered by the user predcits if the review is positive or negative(A classic sentiment analysis problem)
 For example:
 - Review1:I'm so happy to be here!!!(Predicted sentiment-Positive)
 - Review2:The place was not clean and the food oh so stale!(Predicted sentiment-Negative)
@@ -29,7 +29,7 @@ Click on the below link to get a quick demo on how the tool works.
 
 ## Data used for ML model development
 
-The data that was used for development of this application was developed using the files train.txt & test.txt(In the repo for your benefit).
+The data that was used for development of this application was from the files train.txt & test.txt(In the repo for your benefit).
 - Training data(train.txt) contains 959 food reviews and with almost equal distribution of positive and negative sentiment
 - Test data(test.txt) contains 40 reviews which dont have a sentiment marked (We use this to check our development regualization on in the wild data points)
 
@@ -41,11 +41,11 @@ We are here working on text data as input and all machine learning models need v
 
 - vectorizers like countvectorizers and term frequency–inverse document frequency(tfidf)
 
-For the sake of simplicity and as we decided to go for a traditional logistic regression model we have used tfidf vectorizer in tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general(http://www.tfidf.com/)
+For the sake of simplicity and as we decided to go for a traditional logistic regression model we have used tfidf vectorizer.The tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general(http://www.tfidf.com/)
 
 ## Methodology- The machine learning technique used for sentiment classification
 
-The state of the art methodologies  in sentiment prediction or sentiment analysis is Deep learning based,example:
+The state of the art methodologies  in sentiment prediction or sentiment analysis are Deep learning based,example:
 - https://arxiv.org/abs/1801.06146(Universal Language Model Fine-tuning for Text Classification)
 - https://arxiv.org/abs/1810.04805(BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 )
@@ -56,11 +56,11 @@ But we need to understand state of the art does not mean for every applied case.
 
 ![alt test](https://cdn-images-1.medium.com/max/1600/1*867QVJdsBYHt8jd_0G_dfw.png)
 
-As is shown in this amazingly cool demonstrative chart by Andrew Ng .The benefit that you may be able to get is subject to the amount of data available for training our algorithm.In our case we have only 959 training samples which indicates we would be equally wise using a traditional machine learning algorithm than a deep learning algorithm which would have higher complexity and would need more compute
+As is shown in this amazingly cool demonstrative chart by Andrew Ng .The benefit that you may be able to get is subject to the amount of data available for training our algorithm.In our case we have only 959 training samples which indicates we would be equally wise using a traditional machine learning algorithm than a deep learning algorithm which would have higher complexity and would need more compute.
 
 - Availability of compute environment
 
-Advanced machine learning algorithms like deep learning would need a higher compute(mainly GPU acceleartion) for a simplistic data problem like us investment in that is not justifiaable
+Advanced machine learning algorithms like deep learning would need a higher compute(mainly GPU acceleartion) .For a simplistic data problem like ours investment in that is not justifiaable
 
 - Implementation in real world
 
